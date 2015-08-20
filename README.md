@@ -1,5 +1,11 @@
 # swisscalc-lib
-JavaScript library for building a calculator
+JavaScript library that powers SwissCalc (http://www.swisscalc.com).
+
+This library can be used for building a JavaScript-based calculator. 
+It will accept inputs the way a person would normally enter them into a standard calculator (i.e. "1 + 2 =" instead of RPN).
+
+This library can very easily be extended to include new functions/operators to build any type of custom calculator desired.
+You just need to build a UI and connect the buttons to the functions you want to call.
 
 ## Usage
 
