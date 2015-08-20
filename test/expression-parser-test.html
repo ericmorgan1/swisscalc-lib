@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>		
+		<script src="../swisscalc.lib.format.js"></script>
+		<script src="../swisscalc.lib.operator.js"></script>
+		<script src="../swisscalc.lib.operatorCache.js"></script>
+		<script src="../swisscalc.lib.shuntingYard.js"></script>
+		<script src="../ExpressionParser.js"></script>
+		
+		<script type="text/javascript">
+		function txtExpression_KeyDown(txt) {
+			var expression = txt.value;
+			var ep = new ExpressionParser(expression);					
+			var lblResult = document.getElementById("lblResult");
+			lblResult.innerHTML = "Result: " + ep.Evaluate();
+		}
+		
+		function btnEvaluate_Click() {
+			var txtExpression = document.getElementById("txtExpression");
+			var expression = txtExpression.value;
+			var ep = new ExpressionParser(expression);
+			console.log(ep.Evaluate());
+		}
+		
+		</script>
+		
+	</head>
+	
+	<body>
+		<input type="text" id="txtExpression" style="width:100%" onkeyup="txtExpression_KeyDown(this);"/>
+		<button type="button" id="btnEvaluate" onclick="btnEvaluate_Click();">Evaluate</button><br /><br />
+		<label id="lblResult">Result: </label><br />
+	</body>
+</html>
