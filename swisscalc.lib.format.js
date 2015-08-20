@@ -1,6 +1,6 @@
 //
 // Eric Morgan
-// Copyright (c) 2014. Do not copy or redistribute.
+// Copyright (c) 2014. 
 //
 
 var swisscalc = swisscalc || {};
