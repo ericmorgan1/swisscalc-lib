@@ -19,7 +19,7 @@ Use the commands...
 var oc = swisscalc.lib.operatorCache;
 var calc = new swisscalc.calc.calculator();
 	
-	// Calculate: 12 + 45 = 	
+// Calculate: 12 + 45 = 	
 calc.addDigit("1");
 calc.addDigit("2");
 calc.addBinaryOperator(oc.AdditionOperator);
