@@ -9,7 +9,7 @@ You just need to build a UI and connect the buttons to the functions you want to
 It can very easily be extended to include new functions/operators.
 
 ## Usage
-
+ 
 Include the files...
 
 ```html
