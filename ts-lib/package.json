@@ -1,8 +1,8 @@
 {
   "name": "swisscalc",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "test": "tsc && node ./dist/test.js",
     "build": "tsc",
@@ -16,8 +16,7 @@
     "typescript": "^5.8.3"
   },
   "files": [
-    "dist",
-    "src"
+    "dist"
   ],
   "types": "dist/index.d.ts",
   "exports": {
