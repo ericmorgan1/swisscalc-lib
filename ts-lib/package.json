@@ -1,0 +1,38 @@
+{
+  "name": "swisscalc",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "tsc && node ./dist/test.js",
+    "build": "tsc",
+    "prepare": "npm run build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "typescript": "^5.8.3"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ericmorgan1/swisscalc-lib.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ericmorgan1/swisscalc-lib/issues"
+  },
+  "homepage": "https://github.com/ericmorgan1/swisscalc-lib#readme"
+}
